@@ -1,6 +1,8 @@
 # Terms
 
 Repositori (Repo)
+Branch
+Conflict
 
 # Comment
 
