@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="avatar-copy.png">
+	<title>Diệp Minh Hiếu</title>
+</head>
+
+</html><!-- Bắt đầu css-->
+<script
+	type="text/javascript"> ! function (e, t, a) { function n() { c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
+<style type="text/css">
+	.heart {
+		width: 10px;
+		height: 10px;
+		position: fixed;
+		background: #f00;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+	}
+
+	.heart:after,
+	.heart:before {
+		content: '';
+		width: inherit;
+		height: inherit;
+		background: inherit;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		position: fixed;
+	}
+
+	.heart:after {
+		top: -5px;
+	}
+
+	.heart:before {
+		left: -5px;
+	}
+</style>
+
+<style id='page-skin-1' type='text/css'>
+	html,
+	body {
+		cursor: url("cuso.png"), auto
+	}
+
+	a:hover,
+	li:hover,
+	p:hover,
+	span:hover {
+		cursor: url("../cuso.png"), auto
+	}
+
+	html {
+		background-image: url("https://freenice.net/wp-content/uploads/2021/08/hinh-nen-phong-canh-anime-thoi-xua.jpg");
+		font-family: inter, sans-serif;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100vw
+	}
+
+	.next_trang {
+		background-color: #fff;
+		width: 200px;
+		height: 90px;
+		border-radius: 100px 0 0 0;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		z-index: 89;
+	}
+
+	.next_box {
+		background: url("../190-1906502_long-arrow-pointing-to-the-right-comments-long.png") no-repeat center;
+		background-size: 100%;
+		width: 160px;
+		height: 70px;
+	}
+
+	.next_box p {
+		line-height: 70px;
+		color: #fff;
+		font-weight: bold;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		margin-left: 50px
+	}
+
+	.center {
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+
+	.light-orange {
+		color: #ef9d64
+	}
+
+	.light-blue {
+		color: #6a8de4
+	}
+
+	#root {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		min-height: 100vh
+	}
+
+	#main {
+		display: block;
+		position: relative;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		width: 411px;
+		max-width: 411px;
+		min-height: 823px;
+		background-color: #fff;
+		border-radius: 30px;
+		box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, .1)
+	}
+
+	.container {
+		padding: 0 15px
+	}
+
+	#cover-image {
+		background-position: center;
+		background-size: cover;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		width: 411px;
+		height: 165px;
+		position: relative;
+		left: -15px
+	}
+
+	#profile-header {
+		position: relative;
+		display: grid;
+		grid-template-columns: 120px auto;
+		column-gap: 15px;
+		margin-bottom: -10px
+	}
+
+	#avatar-image {
+		position: relative;
+		background-position: center; 
+		background-size: cover;
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		top: -25px
+	}
+
+	#name {
+		position: relative;
+		padding-top: 5px
+	}
+
+	.names {
+		font-weight: 600;
+		font-size: 26px;
+		margin: 0
+	}
+
+	.icon_check {
+		background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Eo_circle_light-blue_checkmark.svg/2048px-Eo_circle_light-blue_checkmark.svg.png");
+		background-size: cover;
+		width: 20px;
+		height: 20px;
+	}
+
+
+	.nicknames {
+		font-weight: 500;
+		font-size: 20px;
+		margin: 0
+	}
+
+	#skills {
+		padding-top: 5px;
+		margin-left: 5px
+	}
+
+	.skill-item {
+		display: inline-flex;
+		justify-content: center;
+		align-content: center;
+		position: relative;
+		font-size: 14px;
+		font-weight: 400;
+		height: 20px;
+		margin-right: 10px;
+		width: auto
+	}
+
+	.skill-item::before {
+		position: absolute;
+		content: "";
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 100%;
+		height: 18px;
+		background-color: currentColor;
+		opacity: .2;
+		border-radius: 5px
+	}
+
+	.bio-story {
+		margin-top: -14px;
+		position: relative;
+		display: grid;
+		grid-template-columns: 70px auto;
+		height: 70px;
+		width: 100%;
+		background-color: #e8f0fb;
+		border-radius: 20px;
+		-webkit-box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, .4);
+		box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, .1);
+		margin-bottom: 15px
+	}
+
+	.bio-story-thumb {
+		width: 50px;
+		height: 50px;
+		background-position: center;
+		background-size: cover;
+		border-radius: 15px;
+		margin: 10px
+	}
+
+	.bio-story-content p {
+		position: relative;
+		font-size: 15px;
+		margin-top: 10px;
+		font-weight: 600;
+		margin-bottom: 10px
+	}
+
+	.bio-story-content span {
+		position: relative;
+		font-size: 12px;
+		bottom: 15px;
+		color: #587fe1;
+		font-weight: 500
+	}
+
+	#content-body {
+		position: relative;
+		margin-top: 20px;
+		max-width: 100%
+	}
+
+	.drop-title {
+		font-weight: 600;
+		font-size: 18px;
+		margin-left: 10px
+	}
+
+	#link-box {
+		position: relative;
+		width: 100%
+	}
+
+	.link-item {
+		position: relative;
+		display: grid;
+		grid-template-columns: 70px auto 65px;
+		height: 70px;
+		width: 100%;
+		background-color: #fafafa;
+		border-radius: 20px;
+		margin-bottom: 15px;
+		-webkit-box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, .4);
+		box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, .1);
+		transition: all 250ms ease-in-out
+	}
+
+	.link-item:hover {
+		background-color: #eee
+	}
+
+	.link-content {
+		padding-top: 15px
+	}
+
+	.link-content p {
+		margin: 0;
+		font-weight: 600
+	}
+
+	.link-content span {
+		position: absolute;
+		font-weight: 400;
+		font-size: 14px;
+		bottom: 15px;
+		color: #a6a9b1;
+		max-width: 50%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		transition: all 250ms;
+		cursor: pointer
+	}
+
+	.link-content span:hover {
+		color: #7c7e83
+	}
+
+	.link-btn-chill {
+		display: inline-flex;
+		justify-content: center;
+		align-content: center;
+		position: relative;
+		margin-top: 15px;
+		font-size: 14px;
+		width: auto;
+		font-weight: 600
+	}
+
+	.link-btn-chill::before {
+		position: absolute;
+		content: "";
+		padding-left: 7px;
+		padding-right: 7px;
+		width: 40px;
+		height: 18px;
+		background-color: currentColor;
+		opacity: .2;
+		border-radius: 5px;
+		top: -1px;
+		transition: all 250ms
+	}
+
+	.link-btn-chill {
+		transition: all 250ms ease-in-out
+	}
+
+	.link-btn-chill:hover::before {
+		opacity: .5
+	}
+
+	.tet-bg-footer {
+		position: fixed;
+		z-index: 90;
+		bottom: -50px;
+		left: 0;
+		width: 100%;
+		height: 104px;
+		background: url("https://likesub38.com/assets/images/tet_bg1.png") repeat-x bottom left;
+		pointer-events: none;
+	}
+
+	.tet-icon-footer {
+		position: fixed;
+		z-index: 90;
+		bottom: 0;
+	}
+
+	.tet-image-left {
+		position: fixed;
+		z-index: 90;
+		right: 0;
+	}
+
+	.snowflake {
+		position: fixed;
+		top: -10%;
+		z-index: 99999;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: default;
+		-webkit-animation-name: snowflakes-fall, snowflakes-shake;
+		-webkit-animation-duration: 10s, 3s;
+		-webkit-animation-timing-function: linear, ease-in-out;
+		-webkit-animation-iteration-count: infinite, infinite;
+		-webkit-animation-play-state: running, running;
+		animation-name: snowflakes-fall, snowflakes-shake;
+		animation-duration: 10s, 3s;
+		animation-timing-function: linear, ease-in-out;
+		animation-iteration-count: infinite, infinite;
+		animation-play-state: running, running;
+		pointer-events: none;
+	}
+
+	.snowflake img {
+		width: 30px;
+	}
+
+	.snowflake:nth-of-type(0) {
+		left: 1%;
+		-webkit-animation-delay: 0s, 0s;
+		animation-delay: 0s, 0s
+	}
+
+	.snowflake:nth-of-type(1) {
+		left: 10%;
+		-webkit-animation-delay: 1s, 1s;
+		animation-delay: 1s, 1s
+	}
+
+	.snowflake:nth-of-type(2) {
+		left: 20%;
+		-webkit-animation-delay: 6s, .5s;
+		animation-delay: 6s, .5s
+	}
+
+	.snowflake:nth-of-type(3) {
+		left: 30%;
+		-webkit-animation-delay: 4s, 2s;
+		animation-delay: 4s, 2s
+	}
+
+	.snowflake:nth-of-type(4) {
+		left: 40%;
+		-webkit-animation-delay: 2s, 2s;
+		animation-delay: 2s, 2s
+	}
+
+	.snowflake:nth-of-type(5) {
+		left: 50%;
+		-webkit-animation-delay: 8s, 3s;
+		animation-delay: 8s, 3s
+	}
+
+	.snowflake:nth-of-type(6) {
+		left: 60%;
+		-webkit-animation-delay: 6s, 2s;
+		animation-delay: 6s, 2s
+	}
+
+	.snowflake:nth-of-type(7) {
+		left: 70%;
+		-webkit-animation-delay: 2.5s, 1s;
+		animation-delay: 2.5s, 1s
+	}
+
+	.snowflake:nth-of-type(8) {
+		left: 80%;
+		-webkit-animation-delay: 1s, 0s;
+		animation-delay: 1s, 0s
+	}
+
+	.snowflake:nth-of-type(9) {
+		left: 90%;
+		-webkit-animation-delay: 3s, 1.5s;
+		animation-delay: 3s, 1.5s
+	}
+
+	.snowflake:nth-of-type(10) {
+		left: 25%;
+		-webkit-animation-delay: 2s, 0s;
+		animation-delay: 2s, 0s
+	}
+
+	.snowflake:nth-of-type(11) {
+		left: 65%;
+		-webkit-animation-delay: 4s, 2.5s;
+		animation-delay: 4s, 2.5s
+	}
+
+	/* customizable snowflake styling */
+	.snowflake {
+		color: #fff;
+		/* font-size: 1em; */
+		/* font-family: Arial, sans-serif; */
+		/* text-shadow: 0 0 1px cornflowerblue; */
+	}
+
+	@-webkit-keyframes snowflakes-fall {
+		0% {
+			top: -10%
+		}
+
+		100% {
+			top: 100%
+		}
+	}
+
+	@-webkit-keyframes snowflakes-shake {
+
+		0%,
+		100% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0)
+		}
+
+		50% {
+			-webkit-transform: translateX(80px);
+			transform: translateX(80px)
+		}
+	}
+
+	@keyframes snowflakes-fall {
+		0% {
+			top: -10%
+		}
+
+		100% {
+			top: 100%
+		}
+	}
+
+	@keyframes snowflakes-shake {
+
+		0%,
+		100% {
+			transform: translateX(0)
+		}
+
+		50% {
+			transform: translateX(80px)
+		}
+	}
+
+	@media only screen and (max-width:425px) {
+		#root {
+			display: block
+		}
+
+		#main {
+			top: 0;
+			left: 0;
+			border-radius: 0;
+			width: 100%;
+			margin: 0;
+			margin-right: 0
+		}
+
+		#cover-image {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			max-width: 100vw
+		}
+
+		.container {
+			width: 90%
+		}
+
+		.tet-bg-footer,
+		.tet-icon-footer,
+		.tet-image-left {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width:350px) and (min-width:150px) {
+
+		#name,
+		#first-name {
+			font-size: 22px
+		}
+
+		#nickname {
+			font-size: 16px
+		}
+
+		.skill-item {
+			font-size: 12px
+		}
+	}
+
+	-->
+
+	.dell-bt{
+		display: flex;
+		align-items: center;
+		margin-left: 6px;
+	}
+
+</style>
+</head>
+<!-- Bắt đầu phần hiển thị -->
+
+<body>
+	<div class="snowflakes" aria-hidden="true">
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+		<div class="snowflake"><img
+				src="https://pkmacbook.com/wp-content/uploads/2021/06/anh-bong-hoa-dao-png_102501764.png" alt=""></div>
+	</div>
+	<div class="next_trang">
+
+		<span onclick='window.open("../abd.html", "_blank")'>
+			<div class="next_box">
+				<P>NEXT</P>
+			</div>
+		</span>
+
+	</div>
+	<div class="tet-bg-footer"></div>
+	<img class="tet-icon-footer" src="https://likesub38.com/assets/images/tet_icon1.png" alt="">
+	<img class="tet-image-left" src="https://likesub38.com/assets/images/tet_banner_right.png" alt="">
+	<div id='root'>
+		<div id='main'>
+			<div class='container'>
+				<header>
+					<div id='cover-image' style='background-image: url("../anhbia.jpg");'>
+					</div>
+					<div id='profile-header'>
+						<div id='avatar-image' style='background-image: url("avatar-copy.png");'>
+						</div>
+						<div id='name'>
+							<div class="dell-bt">
+								<p class='names' id='first-name'>Diệp Minh Hiếu</p>
+								<div class='icon_check'></div>
+							</div>
+							<p class='nicknames' id='nickname'>(DMHieu)</p>
+							<div id='skills'>
+								<div class='skill-item' style="color: rgb(255, 181, 23)">Developer</div>
+								<div class='skill-item' style="color: rgb(23, 104, 255)">Designer</div>
+							</div>
+						</div>
+					</div>
+					<div class='bio-story'>
+						<div class='bio-story-thumb'
+							style='background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBESEhIPERISEBEREREREREREhEREhERGBQZGRgYGBocITwzHB4rIRgZJzomKy8xNTU1GiQ7QDszPy40NTEBDAwMBgYGEAYGEDEdFh0xMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAADAAMBAQAAAAAAAAAAAAAAAQIDBQYEB//EAD8QAAIBAgMEBgYIBQQDAAAAAAECAAMRBBIhBQYxYRMiQVFxgTJSU5Gh0RQWI0KSk7HBYnKC0vAVM6KjJGNl/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APrkYkyhAoShIliBaypCy4BCEIBCEIBCEIEtMbS2kNAgxRmKAopUUBQjtCAo4QMBQjhAIo4QFCOKAQhCBQjEmUIFCUJEpYFiUJAlCBUIQgEIQgERjkmBJktKMRECTJlEREQFOaw+1uk2l0anqJTqUl7me6s5/wCFv6Zsd49pfR6DODao/Up/zEcfIXPunC7svlxlA97lfxIy/vA+mwjhAUI4QJhHCAoRwgKKOKAQhCBQjEQjEByhJlLAqMRQgUDHeTHAqK8UIDvJJhAwEYQhAkiKMzT7z7S+j4diptUqdRO8EjVvIfG0Djd7NpdPiCqm9OjdE7i1+s3mRbwUTW7OqZK1F/Vq029zgzzR2MD7ERFFSfMqv6yq3vF5REBQgIzAmEIQCEIQCKOKAoQhAoRiIRiA5SxShAcIQgOExV6oRS5DMFFyFUu1uQGpmm+t2C9o/wCXU+UDfQmh+t2C9o/5b/KH1uwXtH/LqfKBvopovrdgvaP+W/yj+tmC9d/y3+UDeQmi+teD9o/5b/KMb1YP13/Lf5QN5Pmu9O0PpGIbKb06V0TuOvWbzPwAnR7U3nomi60GY1HGVSVZcoOha57QL+dpxa04GEU5kVJmWnMi04H0PYz5sNQP/qpj3Lb9p7JzuxdsUadBKbswZcwsEYi2Ykajxmw/1/Des34GgbIQmtG3MP6zfgaMbaoes34GgbCE8dHaVOowVMzE9mRvj3T2QFCOEBRRxGAoQhAcoSYxAqWJIlLAcIQgE0e2926OJu4+yreuo0Y/xDt8eM2Ar1un6PoR0GW/TZxfNb0cnj2z012YIzKudgrFVvlzNbQX7LwPlO09lVsM+Wqlr+i41R/5T+3GeMJPqOINWphiXwqvUY2bDtUUrbNa+bvtrOdx+6dQBXoC+YKXoswLIxGoDHRgD/hgcmtOZFSbsbtYv2R/HT+cobuYv2R/HT+cDSrTmRac3Q3exXsj+On85Y3fxXsz+Kn84GlWnMqpOjwW7bsr9Jem4IyG6spFtbgGeDFbOqUjZ1sOxhqp8DA1y05lWnPQtKDvTT02VeRIv7oGNacyrSnjqbXpr6IZz+EfH5Tx1dsVD6OVByFz7z8oG8CW1np2dhemJ6MgqpszjVQe6/aeU8WxN3auJtWxTOtLiqEkO/8Aavx/WdxRpJTVURQiKLKqiwAgYsNhUprlQeLHi3jM5hFAIQhAURjiMBQhCAxGIhGIFSlkxrAuePDY4VKlSkKdRDTNi7plR9bdQ31nskswAJJsACSe4DjA12B2wtV8go4hCQTmqUwqac7zW1alGniXq9FjXdXa+Vc1Ikixyi/DWbk7ToZBV6RejLZQ+ts1r24T0Vayopd2yqBcseAEDQYfaNKnUestDGFqnpBqYKjW+gvpPF0eG9ntD/POb9KwQtXfEZqNT/bUrZVvroe3QGY6GPprUd2xQdG9FCpAXXsPbA0wpYb2eP8Ah85QpYf2eO+HzmzobWoUgwq4tHJNxmGUqO6wmDFbZw7tdMctMWtlClhfvgeYUsP6mN+EoUqHqYz4TBV2iG4bVRB/DQufeTMX0v8A+x/0CB0Gxujs4piqLFc3SjtsfRmxZAwKsAwPEEXBmp3eq51f/wAv6ZZl62To8mh053/aYNsb0UKF0T7aqNMqHqqf4m/YXPhA8m8G77FWq0a3Rqou1OowSnbk/Z538ROCP+ds9+1Nr18S16r3UG6ovVRfAdp5nWeCBVKmzsERS7MbKqi5J5Cd1u/ustPLWxAD1OK0+KIefrN8Bz4znN0qmXGUv4ukT3o37gT6VAIzFGYCijMRgAhAQgKIxxGAoQhAYjEUBAyCAivGIFCBF9DqDoQe2AjgYfo6ZcuRMt75ci5b99rcZkZARlIBB4ggEHylQgY2ooQFKKVHBSoKjwEk4Sn7On+BPlM0IHl/0+h7Gl+Wnygdn0PY0fy0+U9U53fLafQ0OiU2evdOa0/vHz4eZ7oHFbcxaVa7vTVUpg5ECKFBUfesO06nzE18IQPTRxtWnTekjsiOQXC6FrC1ie7lPLHN4m62Kal02UBuIpE2cr38jy4wNHCN0KkqwKsDYgggg9xEUD27HqZMTQfurU7+BYA/rPq0+Oo5UhhxUhh4g3n2ENcAjgQCPOAxCAgYChCKA4RQgEUcUBQheEAjEUcCpQkxiBQlSI4FQk3lQCEIQEzAAkmwAuSeAE+V7e2icTXer9wdSmO5Bw9+p852G+u0+jo9Ah69e4NuK0x6Xv4e+fPYBMuHw71HVEUu7GwVeJ+Q5z1bK2TVxT5KYsotnqN6CDn3nlPomyNj0sKmVBdyOtUb03+Q5QNfu/u0mHtVq2qVuI7Vp/y955+6dBCBgavbGw6OKF3GSoBZaijrDk3rDkfhOB2rsethWs63Qmy1F1RvkeRn1GRVpq6lHUMrCzKwBBHMGB8fn1fZFXPh6D9rUaZPjkF/jOX23ukRephdRxNEnUfyE8fAzebruThKSsCGTpEYEEEFXYWIPDS0DcCMyRGYCgYQgEIo4BFCEBQjhAUYijEBxiEBAoShJEoQFKitHAJLuFBZiAqgkk8AALkypy++20SlNcLTuXr+kF1OS/D+o6e+Bx+2toHE13rH0ScqA/dQeiP38SZsNgbtviLVHvTod/B35Jfs/i/WbXd7dS1q2KHNaPYOb/2+/unY5RwA8hpAwYXDU6SCnTUIq8FH6nvPMzLGRFALxRmKARQhAIoQgAjMUDAIRQgMQhCA4wIASlWArQl2jgeeMQgIFRiKEChLnM7w7zLhj0NNQ9a12zXyJcaXtxPKcnX3jxjm5ruvJAqAe4QPqUJ8vw282MpkHpi47VqAOD+/uM77Ye1FxVIVVGVgSjre+VwAdD2ixB84Gymtw+y1FZ8S9nrMbKT6NJBoFUeHE9pJ4TNtXHLh6L1m1yjqr6zHRV9/7z5/9a8d7Yfl0v7YH0yE5zc/a1TEpV6Zs7o62OVVsjLoLKO9Wm7xmLp0UarUYIijUn4ADtPKBmMmcHtPfKs5K0AKKdjEK9Q+N9B4WPjNSdvYu9/pFT8WnugfUjFOE2TvdVVgmJ+0QmxcKFdOemjDyvO5VgQGBBBAII1BB4EQHFE7gC5IA7yQBErg6ggjvBBECop4dtYo0cPVqg2ZUOU9znqr8SJ4N0sRWqYc1a1RnLVGCEgCyKAOwd+aBvQY5DOBqSAO8kAQV1b0SG8CD+kCoEyYwIDAlgSVmRRAFWXaAEcBQhCBgjhCA5SiICAED5DiajPUqO18zO7N4ljedDuztHC0kNOvQDMWJ6XIr3B7CDqLcrzfbU3VSo7VabZHclmUi6Mx4kW4Xmgxmx69AFmos6DUvTyuLd9gbgeUDZru7gcS7PRrkBjmFNMoy6a2VhcCb3YuxkwodUdmDlSc1hYgEaW8fhPn6bSprYhXuNQRYEH3zrqW8VsB9Ja+e5pIGtd37D7tT4GBpN9tomrVGGQ3Sj6duDVCNfcNPEmaX/TXFNKx9F3dF55bXPxt5GKjXDuFt1qjgF3cAXY6sxPAa3JnV7yYnD08NRWi9Or0bhQqOhOUqbtYcx8YGLchclWonY9O/mrafBjNdvptI1K5oKfs6HVsODVLdY+XDyPfHu7tf/yqK5Aod8hNyfSBA+NppcXWJqVHIF2qVGN+8sTA2e6+xRiqjF79FTALgaF2PBb9nA38J2ON3dwr02RaNNGynI6KFZWtobjj5zx7ikHD1G0v0zA25Ktv1m52vixRoVKpsMqNlv2udFHvIgfN6WD5Tttl4no8F0jdboUqG3eFuQP0E4IbSqDtUf0ifRNkYYnCU0qi5qUyXFraPc25aECByuytlPtHPicTVfKHKKiWuDYHS+iqMw7Jkx2wnwTJXw1V8ubKQ1r34jNbRlNj2R1tm4/BMz4ZjVpXuQqhiR2Z07TzX4T37H3oSu60K9MU6jHKp4oz91jqpgeDeDANUy4k1GPT5PsbEKgCC+t9dR3dsyDZpwdFcUHZ2RVZaOVsudxoDY8ATc6dkW9lVmxWHwyMVBCghTb03t2chNxt7biYRVGXPUcHIl7AKPvMewfrA0ezNgPjF+k4urU65ORRbNYG1+sLKOQEW092/ouWth6tQdcKbkBwSCQQVt3cLT0UdobWqgPTo00VtVLKF0/ra/wmp3jfHDo1xVRTnzFEQjQiwuco5957YHX1cU/0Nqp/3DRPDS7kZQeWus5zY+Gxb0mw9N2TO+erULEEJlAVAeI4E6am/jNhvYehwVOgO006fiEW5PvUe+bbdjBClhaQtZqiio/eWcX18BYeUC939k/RUdCwdnfMWF+4AcfObgCSolQHCEUAhFeOBihCEBzT714RquFdUBLoyuFHFgt7geRJ8puIxA+OpVZSGDEFSCDc6EG4nSnfbE5MuSkHtbP1uPflvxnUY7drC1mLsmVzxamxQk95HAnnaeVNzMIDc9K/IuAPgBA+f4bDvVdadNS7sbBR+p7hznt2zVC5MIjZkwwZCw4PWY3qN4X0HIc59LwezaFFStKmtMEWJW+Y+LcT754PqpgfYn8yr/dA4LZ+w8TiEL0kzIGK3LovWABNrnXjLxu72Koo1WpTCotsxDo1rkAaA95n03B4SnRRaVNcqLey3J4m51PHjHi8KlWm1KouZGADLci9jfiOYgfIcNVNOpTqDijo4/pYH9ps95dnNQrubfZ1WNSm3YQxuR4gn9J2/wBU8D7H/sq/3TZVsFSemKLoroAFCv1tALDU9vPjA+YbI21WwhboypVrZlqAspI4HQix849rbcr4qwqFQim4RAVS/ebm5PiZ2lXczCMbjpE5K9x/yBmWhu3gqNnKBjcANWbMMxNgLHS9+UDld2dgNWda1RSKCnMAR/ukcAP4e8+Xhtd93rU+hr03qIillcI7Kt7grmseRE6wiYqtNXUo6h1YWZWAII5gwNfhtv4SogcVqaXFylRgjKe0EGcrtmrTxeNorhuu10DuosGIe5a/blHbOgq7qYNjfo2XktRwPjPfgNmUMOCKVNUJ4tqzEc2OsDkcRikG1Wes2REewJvYWp2X4m8x7yYhGxdDFA9JQKpZgLqwSoc6i/G37zrcfsbDV2z1aYZ+GYFkYjmVOsp9l0GpLhzTU0l9FDfqm5NweIOp1v2wMZ25hAufp6drXsGu34eN+VpxuL2iuJxtKq/Uoh0CZ9Ps1e9z4m/+CdTR3Wwatm6Mtyd3K+6+vnPfjNi4atl6SkpyDKuUsll7uqRpygcvvjVFethaFNgyuoYFTcHpHCgg+C/Gd0iBQFHAAAeAngXY2Gz06nRrnpqi02u3VVBZQNeybAQKEcIQAyWMCZDGA7wkXhAuAhAQCNYo1gZBHFHAIQjEDmNt1mSpVc1HNOlSRitHEClUoekS5Q6VL6WB7rWnv23XslFQagNaoFUI4o5uqzZWY+iNOzXsmxq4Sk7K700dl9FmRWZfAkaSq9BKi5HVXU8VdQwPkYGn3fxNRqNe5NQ0q9ZKd36U2UAhc33tSReeLZ1c5sC613qviQ3TozllP2TMxC/cysANLcbTpaVFUFkVUBNyFAUE2tfTwHukU8LTRmdKaKzek6qqs3iQNYGh25VZajv0jFKdBWKUsQKNWibsS+Q6PcAWB9W1tZn3iVXoUnLOq9PhjcMU0aoou1uB18jNtWwlNyrPTpuy+izorFfAkaS6tNXUq6q6nirAMpHMHjA1O2qoSnSQNU+0qpTUpUCF9CbNUPogheI1PnMe7tZmWqrMWCYh0S79KQoVTlzfesSdZtK1Cmy5GRGSwGRlVksOAsdJCU0QWRVQXuQqhRe1uzkB7oGr3fv9HSs9So7OpZ2qOSqhWbgDounb75m2w7Cj01Nj9kyVuodHpqbuunEFM3wntFJAuQKoSxGQKMtjxFu6GQWy2GW2XLYWta1rd0Dw7JqGp0lcsWSpVYUhclRTTqAgfxEFvMTU4A1BTwVc1artVqim4d2ZGRg+mU6AjKNeM6RECgKoCqBYBQAAO4AcILQQBVCIAhugCrZT3qOw6nh3wMiiZLSVEsQGICEUC7ySYrxEwBjIYwYyIDhFCBnhGZMB3jUybwBgZRHJUyoBKEmOBUIrwvADFCKASWMZmN2gQxkQYySYATCEBABLAkiWIFLKkiVeAXiJgTJJgF5JMRMmA4wIhLAgK0JUIFmIwhAUBCEC1lwhAYhCEBwhCAooQgS0xNCEDEYGEICEYhCBSyxCEBiMwhAkyWhCBBgIQgUJYhCAQhCB/9k=");'>
+						</div>
+						<div class='bio-story-content' style='margin-top: 6px;'>
+							<p>SAOSTARVN</p>
+							<span
+								onclick='window.open("https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tuoitrevn24h.com%2F2022%2F01%2Fdiep-minh-hieu-chang-trai-uoc-biet-en.html%3Ffbclid%3DIwAR125r58V7pbUMkDSpgPbYlKmem9ameA8VZrudhooizwkJhJVdMqN4d_2HA&h=AT16cQqbzsaY0jg76IclUrbPSjd_kStWZAZblYcaGKXe8Qy5rywKDWkmLDZ9dGmLeX96jliDtvxeG4ZJn9EXhJq2sO7IljIS6_GTYIQOkhfySfiP6WCLh-WtI-bukmssdJW0zg", "_blank")'>saostarvn.net</span>
+						</div>
+					</div>
+				</header>
+				<div id='content-body'>
+					<p class='drop-title'>Liên kết cá nhân</p>
+					<div id='link-box'>
+						<div class='link-item'>
+							<div class='bio-story-thumb'
+								style='background-image: url("https://cache.cloudads.vn/wp-content/uploads/2015/12/facebook.png");'>
+							</div>
+							<div class='link-content'>
+								<p>Facebook</p>
+								<span onclick='window.open("https://www.facebook.com/hieuminh85203/", "_blank")'>Diệp
+									Minh Hiếu</span>
+							</div>
+							<div class='link-btn'>
+								<div class='link-btn-chill light-orange'
+									onclick='window.open("https://www.facebook.com/hieuminh85203/", "_blank")'>OPEN
+								</div>
+							</div>
+						</div>
+						<div class='link-item'>
+							<div class='bio-story-thumb'
+								style='background-image: url("https://cdn-icons-png.flaticon.com/512/174/174855.png")'>
+							</div>
+							<div class='link-content'>
+								<p>Instagram</p>
+								<span onclick='window.open("https://www.instagram.com/hieuminh85203/", "_blank")'>Diệp
+									Minh Hiếu</span>
+							</div>
+							<div class='link-btn'>
+								<div class='link-btn-chill light-orange'
+									onclick='window.open("https://www.instagram.com/hieuminh85203/", "_blank")'>OPEN
+								</div>
+							</div>
+						</div>
+						<div class='link-item'>
+							<div class='bio-story-thumb'
+								style='background-image: url("https://cdn.chanhtuoi.com/uploads/2020/10/logo-zalo.jpg");'>
+							</div>
+							<div class='link-content'>
+								<p>Zalo</p>
+								<span onclick='window.open("https://zalo.me/0392518429", "_blank")'>0392.518.429</span>
+							</div>
+							<div class='link-btn'>
+								<div class='link-btn-chill light-orange'
+									onclick='window.open("https://zalo.me/0392518429", "_blank")'>OPEN</div>
+							</div>
+						</div>
+						<div class='link-item'>
+							<div class='bio-story-thumb'
+								style='background-image: url("https://cdn-icons-png.flaticon.com/512/281/281769.png");'>
+							</div>
+							<div class='link-content'>
+								<p>Gmail</p>
+								<span
+									onclick='geturl("diepminhhieuhieu0805@gmail.com")'>diepminhhieuhieu0805@gmail.com</span>
+							</div>
+							<div class='link-btn'>
+								<div class='link-btn-chill light-blue'
+									onclick='geturl("diepminhhieuhieu0805@gmail.com")'>COPY</div>
+							</div>
+						</div>
+						<div class='link-item'>
+							<div class='bio-story-thumb'
+								style='background-image: url("https://aa-concept.com/wp-content/uploads/2019/10/icon-Phone-circle_zpsbt3frfu1.png");'>
+							</div>
+							<div class='link-content'>
+								<p>Hotline</p>
+								<span onclick='geturl("0563929780")'>0563.929.780</span>
+							</div>
+							<div class='link-btn'>
+								<div class='link-btn-chill light-blue' onclick='geturl("0563929780")'>COPY</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function geturl(giatri) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val(giatri).select();
+			document.execCommand("copy");
+			$temp.remove();
+			alert("Copy thành công!");
+		}
+	</script>
+	<script crossorigin='anonymous' src='https://code.jquery.com/jquery-3.6.0.slim.min.js'></script>
+	<div class='no-items section' id='code.pro.vn'></div>
+	<!--<head>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>-->
+	<!--<body>
+</body>-->
+</body>
+<!-- Kết thúc phần hiển thị -->
+
+</html>
