@@ -1,0 +1,3 @@
+<?php //Mautic%255CWebhookBundle%255CController%255CWebhookController
+
+return [PHP_INT_MAX, []];
